@@ -1,7 +1,6 @@
-package samples.patterns.creational.abstractfactory.enchanted;
+package patterns.creational.abstractfactory.enchanted;
 
-import samples.patterns.creational.workspace.Wall;
-
+import samples.maze.Wall;
 import java.util.Random;
 /**
  * Created by Nikita Shkaruba on 21.01.16.
@@ -18,9 +17,5 @@ public class EnchantedWall extends Wall {
 
     public void passThrough() {
         // logic
-        //if (isPassable)
-        //    Pass()
-        //else
-        //    ...
     }
 }

@@ -1,4 +1,4 @@
-package samples.patterns.creational.workspace;
+package samples.maze;
 
 import java.util.ArrayList;
 

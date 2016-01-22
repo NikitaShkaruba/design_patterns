@@ -1,6 +1,6 @@
-package samples.patterns.creational.abstractfactory.bombed;
+package patterns.creational.abstractfactory.bombed;
 
-import samples.patterns.creational.workspace.Wall;
+import samples.maze.Wall;
 /**
  * Created by Nikita Shkaruba on 21.01.16.
  * <p>

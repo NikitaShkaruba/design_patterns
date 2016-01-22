@@ -1,4 +1,4 @@
-package samples.patterns.creational.workspace;
+package samples.maze;
 
 /**
  * Created by Nikita Shkaruba on 20.01.16.
@@ -8,7 +8,9 @@ package samples.patterns.creational.workspace;
  * GitHub: github.com/SigmaOne
  * Vk: vk.com/wavemeaside
  */
-
-public interface MapSite {
-    void enter();
+public enum Direction {
+    NORTH,
+    SOUTH,
+    EAST,
+    WEST
 }

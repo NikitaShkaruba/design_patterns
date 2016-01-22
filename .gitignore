@@ -42,7 +42,6 @@ Thumbs.db
 .idea/libraries/
 .idea/copyright/
 /out/
-*.iml
 
 # User-specific stuff:
 .idea/workspace.xml

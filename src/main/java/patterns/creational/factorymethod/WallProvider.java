@@ -1,7 +1,6 @@
-package samples.patterns.creational.factorymethod;
+package patterns.creational.factorymethod;
 
-import samples.patterns.creational.workspace.Door;
-
+import samples.maze.Wall;
 /**
  * Created by Nikita Shkaruba on 22.01.16.
  * <p>
@@ -20,6 +19,8 @@ import samples.patterns.creational.workspace.Door;
 // This pattern is true when: some consumer class(1) have functionality outside(from factory method in provider class(2))
 // So consumer(1) requests an object from factory method of abstract(or not) provider(2) class.
 // All this scheme is good because we can override provider class(2) with factory method to return different kind of objects!
-public abstract class SimpleProvider {
-    public abstract Door factoryMethod();
+public abstract class WallProvider {
+    // factory method
+    public abstract Wall getWall();
 }
+

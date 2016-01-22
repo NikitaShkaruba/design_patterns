@@ -1,11 +1,7 @@
-package samples.patterns.creational.prototype;
+package patterns.creational.prototype;
 
-import samples.patterns.creational.abstractfactory.MazeFactory;
-import samples.patterns.creational.workspace.Door;
-import samples.patterns.creational.workspace.Maze;
-import samples.patterns.creational.workspace.Room;
-import samples.patterns.creational.workspace.Wall;
-
+import patterns.creational.abstractfactory.MazeFactory;
+import samples.maze.*;
 /**
  * Created by Nikita Shkaruba on 22.01.16.
  * <p>
@@ -14,6 +10,7 @@ import samples.patterns.creational.workspace.Wall;
  * GitHub: github.com/SigmaOne
  * Vk: vk.com/wavemeaside
  */
+
 public class MazePrototypeFactory implements MazeFactory {
     private Maze prototypeMaze;
     private Wall prototypeWall;

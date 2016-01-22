@@ -1,13 +1,8 @@
-package samples.patterns.creational.abstractfactory.enchanted;
+package patterns.creational.abstractfactory.enchanted;
 
-import samples.patterns.creational.abstractfactory.MazeFactory;
-import samples.patterns.creational.workspace.Door;
-import samples.patterns.creational.workspace.Maze;
-import samples.patterns.creational.workspace.Room;
-import samples.patterns.creational.workspace.Wall;
-
+import patterns.creational.abstractfactory.MazeFactory;
 import java.util.Random;
-
+import samples.maze.*;
 /**
  * Created by Nikita Shkaruba on 21.01.16.
  * <p>

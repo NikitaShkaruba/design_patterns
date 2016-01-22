@@ -1,8 +1,8 @@
-package samples.patterns.creational.builder;
+package patterns.creational.builder;
 
-import samples.patterns.creational.workspace.*;
 import java.util.ArrayList;
 import java.util.Random;
+import samples.maze.*;
 /**
  * Created by Nikita Shkaruba on 21.01.16.
  * <p>

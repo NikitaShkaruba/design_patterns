@@ -1,6 +1,6 @@
-package samples.patterns.creational.builder;
+package patterns.creational.builder;
 
-import samples.patterns.creational.workspace.Maze;
+import samples.maze.Maze;
 /**
  * Created by Nikita Shkaruba on 21.01.16.
  * <p>
@@ -10,7 +10,7 @@ import samples.patterns.creational.workspace.Maze;
  * Vk: vk.com/wavemeaside
  */
 
-// Pattern *Builder* encapsulates all the inner realization inside, providing interface for constructing.
+// Pattern *Builder* encapsulates all the inner realization inside, providing an interface for constructing.
 public interface MazeBuilder {
     Maze getMaze();
 

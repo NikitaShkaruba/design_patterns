@@ -1,4 +1,4 @@
-package samples.patterns.creational.workspace;
+package samples.maze;
 
 /**
  * Created by Nikita Shkaruba on 20.01.16.
