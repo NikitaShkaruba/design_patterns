@@ -1,13 +1,12 @@
 package samples.maze;
 
+import patterns.creational.abstractfactory.enchanted.EnchantedMazeFactory;
 import patterns.creational.abstractfactory.bombed.BombedRoom;
 import patterns.creational.abstractfactory.bombed.BombedWall;
-import patterns.creational.abstractfactory.enchanted.EnchantedMazeFactory;
-import patterns.creational.abstractfactory.*;
-import patterns.creational.builder.*;
 import patterns.creational.prototype.MazePrototypeFactory;
 import patterns.creational.singleton.SingleMazeFactory;
-
+import patterns.creational.abstractfactory.*;
+import patterns.creational.builder.*;
 /**
  * Created by Nikita Shkaruba on 21.01.16.
  * <p>
@@ -20,7 +19,7 @@ import patterns.creational.singleton.SingleMazeFactory;
 // Main class which is a game itself!
 // You can find comparison between creational patterns in createMaze* methods!
 public class MazeGame {
-    public void main(String[] args) {
+    public static void main(String[] args) {
         Maze maze;
 
         switch(args[0]) {
@@ -34,7 +33,7 @@ public class MazeGame {
         }
     }
 
-    private Maze createMazeWithAbstractFactory(MazeFactory factory) {
+    private static Maze createMazeWithAbstractFactory(MazeFactory factory) {
         // Factory simply supplies components for usage, nothing more. And then we build logic with them!
         Maze maze = factory.makeMaze();
         Room r1 = factory.makeRoom(1);
@@ -56,7 +55,7 @@ public class MazeGame {
 
         return maze;
     }
-    private Maze createMazeWithMazeBuilder(MazeBuilder builder) {
+    private static Maze createMazeWithMazeBuilder(MazeBuilder builder) {
         // Builder encapsulates all the inner realization inside.
         // e.g.:Nobody even know about walls, all the logic inside builder!
         builder.buildMaze();
@@ -66,7 +65,7 @@ public class MazeGame {
 
         return builder.getMaze();
     }
-    private Maze createMazeWithPrototypeFactory() {
+    private static Maze createMazeWithPrototypeFactory() {
         // Prototype is an instance to be cloned and then returned
         // Prototype factory clones and then returns prototypes(objects) with which it has been initialized
         MazePrototypeFactory bombedFactory = new MazePrototypeFactory(
@@ -96,7 +95,7 @@ public class MazeGame {
 
         return maze;
     }
-    private Maze createMazeWithSingletonFactory() {
+    private static Maze createMazeWithSingletonFactory() {
         SingleMazeFactory factory = SingleMazeFactory.getInstance();
 
         Maze maze = factory.makeMaze();
