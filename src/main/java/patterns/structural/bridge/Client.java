@@ -1,6 +1,9 @@
 package patterns.structural.bridge;
 
-class Client {
+import patterns.structural.bridge.bridgeends.DrawingAPI1;
+import patterns.structural.bridge.bridgeends.DrawingAPI2;
+
+public class Client {
     public static void main(String[] args) {
         Shape[] shapes = new Shape[] {
                 new CircleShape(1, 2, 3, new DrawingAPI1()),

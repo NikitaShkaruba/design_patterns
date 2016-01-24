@@ -1,5 +1,5 @@
 package patterns.structural.bridge;
 
-interface DrawingAPI {
+public interface DrawingAPI {
     public void drawCircle(double x, double y, double radius);
 }

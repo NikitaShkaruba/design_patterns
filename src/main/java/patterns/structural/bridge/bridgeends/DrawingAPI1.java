@@ -1,7 +1,9 @@
-package patterns.structural.bridge;
+package patterns.structural.bridge.bridgeends;
+
+import patterns.structural.bridge.DrawingAPI;
 
 // Concrete implementor 1
-class DrawingAPI1 implements DrawingAPI {
+public class DrawingAPI1 implements DrawingAPI {
     public void drawCircle(double x, double y, double radius) {
         System.out.printf("API1.circle at %f:%f radius %f\n", x, y, radius);
     }

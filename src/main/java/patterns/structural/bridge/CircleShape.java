@@ -1,7 +1,7 @@
 package patterns.structural.bridge;
 
 // Refined abstraction
-class CircleShape extends Shape {
+public class CircleShape extends Shape {
     private double x, y, radius;
     public CircleShape(double x, double y, double radius, DrawingAPI drawingAPI) {
         super(drawingAPI);
