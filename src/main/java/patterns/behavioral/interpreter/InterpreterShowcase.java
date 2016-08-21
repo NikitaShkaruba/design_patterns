@@ -3,23 +3,17 @@ package patterns.behavioral.interpreter;
 import patterns.behavioral.interpreter.expressions.Number;
 import java.util.HashMap;
 import java.util.Map;
+
 /**
- * Created by Nikita Shkaruba on 30.01.16.
- * <p>
- * My Contacts:
- * Email: sh.nickita@list.ru
- * GitHub: github.com/SigmaOne
- * Vk: vk.com/wavemeaside
+ * Pattern *InterpreterShowcase* specifies how to evaluate sentences in a language.
+ * The basic idea is to have a class for each symbol (terminal or nonterminal) in a specialized computer language.
+ * The syntax tree of a sentence in the language is an instance of the composite pattern and
+ * is used to evaluate (interpret) the sentence for a client
  */
-
-// Pattern *Interpreter* specifies how to evaluate sentences in a language.
-// The basic idea is to have a class for each symbol (terminal or nonterminal) in a specialized computer language.
-// The syntax tree of a sentence in the language is an instance of the composite pattern and
-// is used to evaluate (interpret) the sentence for a client
-public class Interpreter {
-    private static String expression;
-
+public class InterpreterShowcase {
     public static void main(String[] args) {
+        String expression;
+
         if (args.length != 0) {
             // user case
             expression = args[0];
