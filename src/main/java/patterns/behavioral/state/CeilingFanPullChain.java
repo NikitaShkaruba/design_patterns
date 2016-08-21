@@ -1,15 +1,5 @@
 package patterns.behavioral.state;
 
-/**
- * Created by Nikita Shkaruba on 31.01.16.
- * <p>
- * My Contacts:
- * Email: sh.nickita@list.ru
- * GitHub: github.com/SigmaOne
- * Vk: vk.com/wavemeaside
- */
-
-// Pattern *State* allows an object to alter its behavior when its internal state changes.
 class CeilingFanPullChain {
     private int currentState = 0;
 
