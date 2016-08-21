@@ -1,14 +1,6 @@
 package patterns.behavioral.command;
 
-/**
- * Created by Nikita Shkaruba on 30.01.16.
- * <p>
- * My Contacts:
- * Email: sh.nickita@list.ru
- * GitHub: github.com/SigmaOne
- * Vk: vk.com/wavemeaside
- */
-
+// Commands of this class may differ
 public class PS3Joystick {
     private Command squareCommand;
     private Command triangleCommand;
