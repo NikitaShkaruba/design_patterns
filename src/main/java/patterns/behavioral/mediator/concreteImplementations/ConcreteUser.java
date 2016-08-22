@@ -1,13 +1,7 @@
-package patterns.behavioral.mediator;
+package patterns.behavioral.mediator.concreteImplementations;
 
-/**
- * Created by Nikita Shkaruba on 31.01.16.
- * <p>
- * My Contacts:
- * Email: sh.nickita@list.ru
- * GitHub: github.com/SigmaOne
- * Vk: vk.com/wavemeaside
- */
+import patterns.behavioral.mediator.ChatMediator;
+import patterns.behavioral.mediator.User;
 
 public class ConcreteUser extends User {
     public ConcreteUser(ChatMediator mediator, String name) {

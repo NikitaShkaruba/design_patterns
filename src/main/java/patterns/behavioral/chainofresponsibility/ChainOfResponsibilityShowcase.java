@@ -1,16 +1,17 @@
 package patterns.behavioral.chainofresponsibility;
 
-import patterns.behavioral.chainofresponsibility.concretehandlers.*;
+import patterns.behavioral.chainofresponsibility.concreteHandlers.*;
 
-
-// Pattern *Chain of responsibility* allows to avoids coupling the sender of a request to its receiver
-// by giving more than one object a chance to handle the request.
-// Chain the receiving objects and pass the request along the chain until an object handles it.
-public class Client {
-    public static void main( String[] args ) {
+/**
+ * Chain of responsibility allows to avoid coupling the sender of a request to its receiver
+ * by giving more than one object a chance to handle the request.
+*/
+public class ChainOfResponsibilityShowcase {
+    public static void main(String[] args) {
         Handler h1 = new Processor1();
         Handler h2 = new Processor2();
         Handler h3 = new Processor3();
+
         h1.SetSuccessor(h2);
         h2.SetSuccessor(h3);
 

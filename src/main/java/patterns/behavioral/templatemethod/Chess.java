@@ -1,20 +1,9 @@
 package patterns.behavioral.templatemethod;
 
-/**
- * Created by Nikita Shkaruba on 31.01.16.
- * <p>
- * My Contacts:
- * Email: sh.nickita@list.ru
- * GitHub: github.com/SigmaOne
- * Vk: vk.com/wavemeaside
- */
-
 public class Chess extends Game {
-    // Implementation of necessary concrete methods
     @Override
     public void doInitializeGame() {
-        // Initialize players
-        // Put the pieces on the board
+        // Initialize player, then put the pieces on the board
     }
     @Override
     public void doMakePlay(int player) {
@@ -22,13 +11,12 @@ public class Chess extends Game {
     }
     @Override
     public boolean doIsEndOfGame() {
-        // Return true if in Checkmate or
-        // Stalemate has been reached
+        // Return true if in Checkmate or Stalemate has been reached
         return false;
     }
     @Override
     public void doPrintWinner() {
-        // Display the winning player
+        // Display the winning player logic
     }
 
     /* Specific declarations for the chess game. */
