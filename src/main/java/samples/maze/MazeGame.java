@@ -48,10 +48,10 @@ public class MazeGame {
         r1.setSide(Direction.SOUTH, door12);
         r1.setSide(Direction.EAST, factory.makeWall());
 
-        r1.setSide(Direction.NORTH, door12);
-        r1.setSide(Direction.WEST, factory.makeWall());
-        r1.setSide(Direction.SOUTH, factory.makeWall());
-        r1.setSide(Direction.EAST, factory.makeWall());
+        r2.setSide(Direction.NORTH, door12);
+        r2.setSide(Direction.WEST, factory.makeWall());
+        r2.setSide(Direction.SOUTH, factory.makeWall());
+        r2.setSide(Direction.EAST, factory.makeWall());
 
         return maze;
     }
@@ -88,10 +88,10 @@ public class MazeGame {
         r1.setSide(Direction.SOUTH, door12);
         r1.setSide(Direction.EAST, bombedFactory.makeWall());
 
-        r1.setSide(Direction.NORTH, door12);
-        r1.setSide(Direction.WEST, bombedFactory.makeWall());
-        r1.setSide(Direction.SOUTH, bombedFactory.makeWall());
-        r1.setSide(Direction.EAST, bombedFactory.makeWall());
+        r2.setSide(Direction.NORTH, door12);
+        r2.setSide(Direction.WEST, bombedFactory.makeWall());
+        r2.setSide(Direction.SOUTH, bombedFactory.makeWall());
+        r2.setSide(Direction.EAST, bombedFactory.makeWall());
 
         return maze;
     }
@@ -111,10 +111,10 @@ public class MazeGame {
         r1.setSide(Direction.SOUTH, door12);
         r1.setSide(Direction.EAST, factory.makeWall());
 
-        r1.setSide(Direction.NORTH, door12);
-        r1.setSide(Direction.WEST, factory.makeWall());
-        r1.setSide(Direction.SOUTH, factory.makeWall());
-        r1.setSide(Direction.EAST, factory.makeWall());
+        r2.setSide(Direction.NORTH, door12);
+        r2.setSide(Direction.WEST, factory.makeWall());
+        r2.setSide(Direction.SOUTH, factory.makeWall());
+        r2.setSide(Direction.EAST, factory.makeWall());
 
         return maze;
     }
